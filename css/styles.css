@@ -1,0 +1,91 @@
+
+body{
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+header{
+    text-align: center;
+    padding: 20px;
+}
+
+.noticias{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.noticias article{
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.leer{
+    text-align: right;
+    padding: 10px;
+}
+.icono{
+    align-items: center;
+    font-size: 0.5rem;
+}
+.noticias figure{
+    padding: 0;
+    margin: 0;
+}
+.noticias figure img{
+    width: 100%;
+   height: 180px;
+   object-fit: cover;
+}
+.fecha{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FF5700;
+    font-weight: bold;
+}
+.fecha h5{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+.tema{
+    background-color: #FF5700;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: inline-block;
+}
+.tema h5{
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+div a{
+    color: #FF5700;
+    font-weight: bold;
+    text-decoration: none;
+}
+.entradas{
+    text-align: right;
+    margin-right: 0;
+    max-width: 1200px;
+}
+footer {
+    text-align: center;
+    background-color: #FF5700;
+    padding: 20px;
+}
+footer nav{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+footer nav a{
+    text-decoration: none;
+    color: white;
+}
