@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;500;600;700&family=Noto+Serif+Old+Uyghur&display=swap');
 body{
     font-family: Arial, sans-serif;
     padding: 0;
@@ -6,7 +6,22 @@ body{
 }
 header{
     text-align: center;
-    padding: 20px;
+    padding-top: 20px;
+}
+header h1{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Noto Serif Old Uyghur";
+    font-weight: 700;
+    margin-bottom: 0;
+    
+}
+.wrapper{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
 }
 
 .noticias{
@@ -14,31 +29,51 @@ header{
     margin: auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
     padding: 20px;
 }
 .noticias article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 330px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 350px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    transition: transform 0.3s ease;
+    
+}
+.noticias article:hover {
+    transform: translateY(-10px);
 }
 .leer{
     text-align: right;
     padding: 10px;
+    font-size: 0.9rem;
 }
 .icono{
     align-items: center;
     font-size: 0.5rem;
+    margin-left: 5px;
 }
 .noticias figure{
     padding: 0;
     margin: 0;
 }
 .noticias figure img{
-    width: 100%;
+   width: 100%;
    height: 180px;
    object-fit: cover;
+}
+.noticias h4{
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: "Noto Serif Old Uyghur";
+    font-weight: 900;
+    padding: 20px;
 }
 .fecha{
     width: 40px;
@@ -46,11 +81,27 @@ header{
     border-radius: 50%;
     background-color: #FF5700;
     font-weight: bold;
+    position: absolute;
+    top: 7%;
+    left: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .fecha h5{
     color: white;
     text-align: center;
     font-weight: bold;
+    font-size: 0.8rem;
+}
+.salud{
+    position: relative;
+}
+.vida-uni{
+    position: relative;
+}
+.univers{
+    position: relative;
 }
 .tema{
     background-color: #FF5700;
@@ -58,6 +109,9 @@ header{
     font-size: 0.8rem;
     font-weight: bold;
     display: inline-block;
+    position: absolute;
+    top: 45.5%;
+    margin: 0;
 }
 .tema h5{
     color: white;
@@ -71,8 +125,8 @@ div a{
 }
 .entradas{
     text-align: right;
-    margin-right: 0;
-    max-width: 1200px;
+    margin-right: 70px;
+    align-self: flex-end;
 }
 footer {
     text-align: center;
@@ -88,4 +142,5 @@ footer nav{
 footer nav a{
     text-decoration: none;
     color: white;
+    font-size: 1.2rem;
 }

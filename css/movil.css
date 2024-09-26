@@ -1,0 +1,35 @@
+@media screen and (max-width:480px){
+    .noticias{
+        flex-direction: column;
+        gap: 40px;
+        padding: px;
+    }
+    .noticias article{
+        width: auto;
+        min-height: auto;
+    }
+    .noticias figure img{
+        height: 200px;
+    }
+    .noticias h4{
+        font-size: 1.rem;
+        padding: 20px;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+    .entradas{
+        display: none;
+    }
+    .fecha{
+        top: 210px;
+        left: calc(100% - 60px); 
+    }
+    .tema{
+        top: 218px;
+        font-size: 0.8rem;
+        padding: 8;
+    }
+    .leer{
+        margin: 10px;
+    }
+}
